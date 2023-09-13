@@ -1,0 +1,32 @@
+
+{%extends "base.html" %}
+{% block body%}
+<!-- <nav> 
+  <div>
+    <h1 class="header"> **Iris Machine Learning Model**</h1>
+  </div>
+</nav> -->
+
+<div class="wrapper">
+<div class="text-box">
+
+  <b><p1> Hello and welcome! This the Iris Machine Learning Model</p1></b>
+  <p1>---------------------------------------------------------------------------</p1>
+  <p1>
+    A machine learning model applied to the Iris dataset classifies the species based on measured features (e.g., sepal dimensions).</p1>
+
+  
+</div></div>
+
+</div>
+<div class = "card"><form class="form", method="POST", action="output">
+  <input placeholder={{features[1]}} class="input" type="text", name="input_1">
+  <input placeholder={{features[2]}} class="input" type="text", name="input_2">
+    <input placeholder={{features[3]}} class="input" type="text", name="input_3">
+    <input placeholder={{features[4]}} class="input" type="text", name="input_4">
+
+  <button>Predict</button>
+</form></div>
+
+
+{% endblock %}
